@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "873982770651",
+    "firebase_url": "https://moviewnew-642c2-default-rtdb.firebaseio.com",
+    "project_id": "moviewnew-642c2",
+    "storage_bucket": "moviewnew-642c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873982770651:android:72f85ecc773f0528df3bfe",
+        "android_client_info": {
+          "package_name": "com.example.RealFilm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873982770651-nm0ur1etes3sfaaooggkjf10q3ts9h3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.RealFilm",
+            "certificate_hash": "592a8deb2681b356b1b9d9f04ab659dcf7ff6ffe"
+          }
+        },
+        {
+          "client_id": "873982770651-rf4sr65oh4gn9d8ukphekp4k55bvhghu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBXrxcEqyxocFilzhcFp452vWKOimc-MI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873982770651-rf4sr65oh4gn9d8ukphekp4k55bvhghu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

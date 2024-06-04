@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/category_item1"
+        android:title="@string/category_popup_item_1"/>
+    <item android:id="@+id/category_item2"
+        android:title="@string/category_popup_item_2"/>
+    <item android:id="@+id/category_item3"
+        android:title="@string/category_popup_item_3"/>
+    <item android:id="@+id/category_item4"
+        android:title="@string/category_popup_item_4"/>
+    <item android:id="@+id/category_item5"
+        android:title="@string/category_popup_item_5"/>
+    <item android:id="@+id/category_item6"
+        android:title="@string/category_popup_item_6"/>
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/radial"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons_film"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/tv_login"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:fontFamily="@font/baloo"
+        android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiplayout_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/AppTheme"
+        app:errorTextColor="@color/red_100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:elegantTextHeight="false"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tiplayout_login_password"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white_50"
+        android:theme="@style/AppTheme"
+        app:errorTextColor="@color/red_100">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:elegantTextHeight="false"
+            android:textColor="@color/white"
+            android:id="@+id/edittext_login_password"
+            android:hint="@string/text_password"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/btn_confirm"
+        android:fontFamily="@font/baloo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_rememberlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/cb_remember_login"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_question"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_register"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_register"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</LinearLayout>

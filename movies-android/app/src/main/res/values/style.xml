@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- ...other style settings -->
+        <item name="colorAccent">#FF5722</item>
+
+        <item name="android:textColorHint">#80FFFFFF</item>
+    </style>
+
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

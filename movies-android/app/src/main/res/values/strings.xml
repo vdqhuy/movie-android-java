@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Real Phim</string>
+    <!-- common -->
+    <string name="ok">OK</string>
+    <string name="add">Thêm</string>
+    <string name="required_fields_message">Các trường là bắt buộc</string>
+    <string name="edit">Sửa</string>
+
+    <!-- common movie -->
+    <string name="genre">sap delete:</string>
+    <string name="link">link %s</string>
+    <string name="link_movie">Link phim:</string>
+    <string name="movie_name">Tên phim:</string>
+    <string name="movie_actors">Diễn viên:</string>
+    <string name="movie_director">Đạo diễn:</string>
+    <string name="movie_duration">Thời lượng (Phút):</string>
+    <string name="country">Quốc gia</string>
+    <string name="movie_release">Năm phát hành:</string>
+    <string name="movie_genre">Thể loại:</string>
+    <string name="movie_country">Quốc gia:</string>
+    <string name="movie_description">Nội dung phim:</string>
+    <string name="movie_trailer">Trailer link:</string>
+
+    <!-- label screen -->
+
+
+    <!-- edit movie -->
+
+    <string name="edit_success">Chỉnh sửa movie thành công</string>
+
+    <string name="textview_new_movie"><u>Phim mới</u></string>
+    <string name="textview_category"><u>Thể loại</u></string>
+    <string name="textview_nation"><u>Quốc gia</u></string>
+
+    <!-- Item trong Popupmenu thể loại -->
+    <string name="category_popup_item_1">Chiến tranh</string>
+    <string name="category_popup_item_2">Hành động</string>
+    <string name="category_popup_item_3">Tâm lý</string>
+    <string name="category_popup_item_4">Viễn tưởng</string>
+    <string name="category_popup_item_5">Kinh dị</string>
+    <string name="category_popup_item_6">Hài hước</string>
+
+    <!-- Item trong Popupmenu quốc gia -->
+    <string name="nation_popup_item_1">Việt Nam</string>
+    <string name="nation_popup_item_2">Thái Lan</string>
+    <string name="nation_popup_item_3">Hàn Quốc</string>
+    <string name="nation_popup_item_4">Mỹ</string>
+    <string name="nation_popup_item_5">Hồng Kông</string>
+    <string name="nation_popup_item_6">Âu</string>
+
+
+    <string name="tv_login">Đăng nhập</string>
+    <string name="tv_register">Đăng ký</string>
+    <string name="btn_confirm">Xác nhận</string>
+    <string name="error_not_be_empty">Chỗ này không được bỏ trống</string>
+    <string name="error_password_more_chr">Mật khẩu phải >6 ký tự</string>
+
+    <!-- login -->
+    <string name="text_password">Mật khẩu</string>
+    <string name="cb_remember_login">Lưu đăng nhập!</string>
+    <string name="tv_question">Bạn chưa có tài khoản?</string>
+    <string name="progressDialog_logging">Đang đăng nhập, Vui lòng chờ...</string>
+    <string name="toast_logging">Đăng nhập thành công.</string>
+
+    <!-- register -->
+    <string name="tip_name">Tên</string>
+    <string name="tip_birthday">Sinh nhật</string>
+    <string name="tip_password_1">Mật khẩu (6-20 ký tự)</string>
+    <string name="tip_password_2">Nhập lại mật khẩu</string>
+    <string name="cb_agree">Đồng ý với các Điều khoản và Điều kiện của chúng tôi</string>
+    <string name="tv_have_accout">Bạn đã có tài khoản?</string>
+    <string name="error_agree">Vui lòng đọc và đồng ý với chính sách người dùng của chúng tôi.</string>
+    <string name="error_email_1">Địa chỉ email không hợp lệ</string>
+    <string name="error_password_1">Mật khẩu nhập lại không chính xác</string>
+    <string name="toast_register_succes">Đăng ký thành công, vui lòng đăng nhập!</string>
+    <string name="progressDialog_register_loading">Đang xử lý, Vui lòng chờ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/radial"
+    tools:context=".activity.ChartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:src="@drawable/ic_round_arrow_back_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Thống kê"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/red_40" />
+
+        <TextView
+            android:id="@+id/txt_movie_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:text="Số lượng phim: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:drawableTop="@drawable/ic_file_save_24px"
+            android:background="@color/red"
+            android:fontFamily="@font/baloo"
+            android:text="Xuất file"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:text="Danh sách phim: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select_genre"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="25dp"
+                android:layout_marginEnd="15dp">
+                <Spinner
+                    android:id="@+id/sp_select_genre"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select_country"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+                <Spinner
+                    android:id="@+id/sp_select_country"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_refresh"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="25dp"
+                android:layout_marginStart="15dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_refresh_24px"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/layout_list_film"/>
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:gravity="center"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="20dp">-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            app:cardCornerRadius="5dp"-->
+        <!--            android:layout_marginEnd="20dp">-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txt_lbl_likes"-->
+        <!--                android:layout_width="150dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:drawableTop="@drawable/ic_favorite_24px"-->
+        <!--                android:text="Lượt thích"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="20dp" />-->
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            app:cardCornerRadius="5dp"-->
+        <!--            android:layout_marginStart="20dp">-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txt_lbl_cmts"-->
+        <!--                android:layout_width="150dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:drawableTop="@drawable/ic_comment_24px"-->
+        <!--                android:text="Lượt bình luận"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="20dp" />-->
+        <!--        </androidx.cardview.widget.CardView>-->
+        <!--    </LinearLayout>-->
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

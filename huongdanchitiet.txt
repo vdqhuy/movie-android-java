@@ -1,0 +1,26 @@
+Các công cụ cần chuẩn bị:
+• Android Studio: Môi trường phát triển để tạo ứng dụng Android.
+• NodeJS: Môi trường JavaScript runtime để chạy server backend.
+• XAMPP (phiên bản 7.4 hoặc 8): Phần mềm để chạy server Apache, MySQL, và phpMyAdmin.
+• VSCode: Môi trường phát triển để viết và chỉnh sửa code backend.
+Công nghệ sử dụng:
+• Android Studio (Java): Dùng để phát triển ứng dụng Android.
+• Backend API: Sử dụng NodeJS để xây dựng API kết nối với CSDL MySQL.
+• CSDL MySQL phpMyAdmin: Quản lý dữ liệu thông qua giao diện phpMyAdmin.
+Quy trình cài đặt và cấu hình:
+1. Cài đặt CSDL:
+Bước 1: Chạy XAMPP và bật Apache và MySQL.
+Bước 2: Mở trình duyệt và truy cập vào http://localhost/phpmyadmin.
+Bước 3: Tạo database mới với tên real_film.
+Bước 4: Chọn tab Import trong phpMyAdmin, sau đó chọn Choose File và tải lên file real_film.sql. Nhấn Go để import.
+2. Cài đặt Backend (sử dụng VSCode):
+Bước 1: Mở VSCode, chọn File => Open Folder và chọn thư mục movies-rest-api.
+Bước 2: Mở Terminal trong VSCode và chạy lệnh npx tsc để chuyển đổi code TypeScript thành JavaScript.
+Bước 3: Tiếp tục trong Terminal, chạy lệnh node ./dist/server.js để khởi chạy server. Điều này cho phép backend kết nối với CSDL.
+Bước 4: Cập nhật địa chỉ IP trong file cấu hình server để phù hợp với môi trường của bạn.
+3. Cài đặt Android:
+Bước 1: Mở Android Studio và chạy dự án.
+Bước 2: Mở Terminal trong Android Studio và chạy lệnh adb reverse tcp:3000 tcp:3000 để điều hướng traffic từ port 3000 trên thiết bị sang port 3000 trên localhost.
+4. Cấu hình liên kết video:
+• Đảm bảo rằng các URL bạn sử dụng để thêm video vào ứng dụng là hợp lệ. Các địa chỉ URL không hợp lệ có thể khiến ứng dụng bị lỗi và crash.
+• Bạn có thể sử dụng link từ Gist cung cấp tại đây: https://gist.github.com/jsturgis/3b19447b304616f18657 hoặc tải video lên Firebase và sử dụng URL từ đó.
